@@ -1,0 +1,22 @@
+ALGORITHM count
+countwords:=0;
+countvowels:=0;
+countsent:=0;
+nbrecar : INTEGER :=0;
+BEGIN
+WHILE (countsent <> ".") DO
+    IF (countsent =" ") THEN
+        countwords = countwords+1
+    END_IF
+    IF (countsent in["a", "e", "i","o","u" , "y"]) THEN
+        countvowels= countvowels+1
+    END_IF
+    countsent= countsent+1
+END_WHILE
+nbrecar:= nbrecar+1
+Read (countwords)
+Read (countvowels)
+Read (countsent)
+Read (nbrecar)
+END
+
